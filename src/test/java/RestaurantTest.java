@@ -85,8 +85,9 @@ class RestaurantTest {
 
     @Test
     public void no_selection_from_menu_should_return_zero_total_price(){
+        List<String> selectedMenu = new ArrayList<String>();
         int expectedEstimate = 0;
-        int calculatedEstimate = restaurant.getEstimate(null);
+        int calculatedEstimate = restaurant.getEstimate(selectedMenu);
         assertEquals(expectedEstimate, calculatedEstimate);
     }
 

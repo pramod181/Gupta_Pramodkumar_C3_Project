@@ -68,4 +68,15 @@ public class Restaurant {
         return name;
     }
 
+    public int getEstimate(List<String> Menu){
+        int sum = 0;
+        Item menuItem;
+        for (int i=0; i<Menu.size();i++){
+            menuItem = findItemByName(Menu.get(i));
+            sum = sum + menuItem.getPrice();
+            }
+        return sum;
+
+    }
+
 }
