@@ -20,7 +20,7 @@ public class Restaurant {
     public boolean isRestaurantOpen() {
 
         //DELETE ABOVE STATEMENT AND WRITE CODE HERE
-        if (openingTime.isBefore(getCurrentTime()) && closingTime.isAfter(getCurrentTime()) ) {
+        if ( (openingTime.isBefore(getCurrentTime()) && closingTime.isAfter(getCurrentTime())) || openingTime.equals(getCurrentTime()) || closingTime.equals(getCurrentTime())  ) {
             return true;
         }
         return false;
