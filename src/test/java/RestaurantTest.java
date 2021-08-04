@@ -79,7 +79,7 @@ class RestaurantTest {
         selectedMenu.add("Sweet corn soup");
         selectedMenu.add("Vegetable lasagne");
         int expectedEstimate = 119 + 269;
-        int calculatedEstimate = restaurant.getEstimate(selectedItems);
+        int calculatedEstimate = restaurant.getEstimate(selectedMenu);
         assertEquals(expectedEstimate, calculatedEstimate);
     }
 
